@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SkipLink } from "@/components/ui/SkipLink";
 import "./globals.css";
 
@@ -23,7 +25,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="es" className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <SkipLink />
-        {children}
+        <SiteHeader />
+        <main id="main-content" className="flex flex-1 flex-col">
+          {children}
+        </main>
+        <SiteFooter />
       </body>
     </html>
   );
