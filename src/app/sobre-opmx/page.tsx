@@ -3,10 +3,14 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 
+const description =
+  "OPMX es una plataforma mexicana de investigación y publicación de opinión pública construida sobre datos, metodología, tecnología, trazabilidad, transparencia y auditoría.";
+
 export const metadata: Metadata = {
   title: "Sobre OPMX",
-  description:
-    "OPMX es una plataforma mexicana de investigación y publicación de opinión pública construida sobre datos, metodología, tecnología, trazabilidad, transparencia y auditoría.",
+  description,
+  alternates: { canonical: "/sobre-opmx" },
+  openGraph: { url: "/sobre-opmx", title: "Sobre OPMX — OPMX", description },
 };
 
 const principios = [

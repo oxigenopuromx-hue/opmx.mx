@@ -5,10 +5,14 @@ import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 
+const description =
+  "Quién publica OPMX, su política de correcciones y su política de datos. Los apartados sin información real publicada se marcan explícitamente como pendientes.";
+
 export const metadata: Metadata = {
   title: "Transparencia",
-  description:
-    "Quién publica OPMX, su política de correcciones y su política de datos. Los apartados sin información real publicada se marcan explícitamente como pendientes.",
+  description,
+  alternates: { canonical: "/transparencia" },
+  openGraph: { url: "/transparencia", title: "Transparencia — OPMX", description },
 };
 
 export default function TransparenciaPage() {

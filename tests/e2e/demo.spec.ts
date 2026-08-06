@@ -2,7 +2,9 @@ import { expect, test } from "@playwright/test";
 
 const DEMO_PATH = "/demo/michoacan-gubernatura-junio-2026";
 
-test("demo page is noindex and not attributed to OPMX as real research", async ({ page }) => {
+test("demo page is noindex and not attributed to OPMX as real research", async ({
+  page,
+}) => {
   await page.goto(DEMO_PATH);
 
   const robots = page.locator('meta[name="robots"]');
@@ -12,7 +14,9 @@ test("demo page is noindex and not attributed to OPMX as real research", async (
   await expect(page.getByText(/no es una investigación diseñada/i)).toBeVisible();
 });
 
-test("demo page shows the 97% discrepancy warning and unaltered figures", async ({ page }) => {
+test("demo page shows the 97% discrepancy warning and unaltered figures", async ({
+  page,
+}) => {
   await page.goto(DEMO_PATH);
 
   await expect(page.getByText(/suman 97%, no 100%/i)).toBeVisible();

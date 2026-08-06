@@ -4,9 +4,14 @@ import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { glossaryTerms } from "@/content/glosario";
 
+const description =
+  "Definiciones técnicas de los conceptos metodológicos que utiliza OPMX.";
+
 export const metadata: Metadata = {
   title: "Glosario",
-  description: "Definiciones técnicas de los conceptos metodológicos que utiliza OPMX.",
+  description,
+  alternates: { canonical: "/glosario" },
+  openGraph: { url: "/glosario", title: "Glosario — OPMX", description },
 };
 
 export default function GlosarioPage() {

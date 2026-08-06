@@ -3,10 +3,14 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 
+const description =
+  "El marco metodológico de OPMX: diseño muestral probabilístico y polietápico, ponderación documentada y comunicación honesta del margen de error.";
+
 export const metadata: Metadata = {
   title: "Metodología",
-  description:
-    "El marco metodológico de OPMX: diseño muestral probabilístico y polietápico, ponderación documentada y comunicación honesta del margen de error.",
+  description,
+  alternates: { canonical: "/metodologia" },
+  openGraph: { url: "/metodologia", title: "Metodología — OPMX", description },
 };
 
 export default function MetodologiaPage() {
