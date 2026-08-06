@@ -24,13 +24,22 @@
   --container-content: 72rem;
 }
 
-@theme inline {
+/*
+ * --color-background/--color-foreground son propiedades CSS normales, no
+ * tokens `@theme`: no generan utilidades de Tailwind (no se usa
+ * `bg-background`/`text-foreground` en ningún componente), así que no deben
+ * declararse dentro de `@theme inline` — Tailwind fusiona los tokens
+ * `@theme` en una sola definición en tiempo de build y la envoltura en
+ * `@media` se pierde, dejando el valor "dark" activo de forma permanente
+ * sin importar la preferencia real del sistema.
+ */
+:root {
   --color-background: var(--color-paper);
   --color-foreground: var(--color-ink);
 }
 
 @media (prefers-color-scheme: dark) {
-  @theme inline {
+  :root {
     --color-background: var(--color-ink);
     --color-foreground: var(--color-paper);
   }
