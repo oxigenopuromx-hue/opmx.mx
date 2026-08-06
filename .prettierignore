@@ -1,0 +1,8 @@
+node_modules
+.next
+coverage
+playwright-report
+test-results
+package-lock.json
+BLUEPRINT.md
+BLUEPRINT_v1.1.md
