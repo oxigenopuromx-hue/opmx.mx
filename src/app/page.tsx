@@ -28,6 +28,7 @@ export default function Home() {
 
       <section className="py-16 sm:py-20">
         <Container>
+          <h2 className="sr-only">Secciones de OPMX</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {homeSections.map((section) => (
               <HomeSectionCard key={section.href} section={section} />
