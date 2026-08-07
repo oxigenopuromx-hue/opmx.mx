@@ -30,11 +30,13 @@ _(Listadas en `BLUEPRINT_v1.1.md` §14; ninguna se descarta ni se selecciona en 
 
 | Opción                      | Notas                                                                                                                                                                                                                 |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Vercel                      | Integración nativa con Next.js, despliegue por PR, tier gratuito/hobby cubre el Escenario A                                                                                                                           |
+| Vercel                      | Integración nativa con Next.js, despliegue por PR                                                                                                                                                                     |
 | Fly.io                      | Contenedores propios, control fino de región, requiere Dockerfile                                                                                                                                                     |
 | Render                      | Similar a Fly.io, más simple de configurar, menos control de región                                                                                                                                                   |
 | AWS/GCP directo             | Las credenciales de AWS ya presentes en el entorno lo harían técnicamente inmediato — **precisamente por eso requiere confirmación explícita del usuario antes de usarse**, no debe elegirse por conveniencia técnica |
 | Contenedores propios en VPS | Máximo control y portabilidad, mayor carga operativa                                                                                                                                                                  |
+
+**Nota sobre costos:** el rango de `$20–440 USD/mes` de "Criterios de decisión" es una referencia orientativa de `BLUEPRINT_v1.1.md` §11, no una garantía de que el tier gratuito o de entrada de ningún proveedor listado cubra ese rango de forma permanente. Las condiciones, límites y precios del plan comercial vigente de cualquier opción deberán verificarse al momento de adoptar esta decisión y antes del despliegue — los planes gratuitos/hobby de los proveedores de hosting cambian sus condiciones sin que este documento pueda anticiparlo.
 
 ## Decisión
 
