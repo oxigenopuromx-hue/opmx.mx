@@ -1,16 +1,21 @@
-# Architecture Decision Records — reservado
+# Architecture Decision Records
 
-Este directorio está reservado para ADR (Architecture Decision Records)
-individuales, uno por decisión, siguiendo el formato estándar (contexto,
-opciones evaluadas, decisión, consecuencias).
+ADR (Architecture Decision Records) individuales de OPMX, uno por decisión,
+con contexto, opciones evaluadas, decisión y consecuencias.
 
-**Estado actual: vacío.** Las decisiones arquitectónicas pendientes de
-OPMX (hosting, object storage, proveedor de base de datos, autenticación,
-monorepo, CMS, mapas, infraestructura como código, entre otras listadas
-en `docs/strategy/OPMX_PRODUCT_ROADMAP_v1.0.md` §44) están documentadas
-por ahora como una tabla dentro de
-`docs/architecture/BLUEPRINT_v1.1.md` §14 ("Registro de decisiones
-arquitectónicas pendientes"), no como archivos ADR individuales. Aún no
-se ha resuelto ninguna, por lo que no hay ADR que mover aquí. Cuando se
-resuelva la primera decisión, debe registrarse como un archivo individual
-en este directorio (p. ej. `ADR-001-hosting.md`).
+- [`ADR-001-hosting.md`](ADR-001-hosting.md) — proveedor de hosting.
+  Estado: `Pending Decision` — opciones evaluadas, decisión final pendiente
+  del usuario. No se decide unilateralmente ni se usan las credenciales de
+  AWS presentes en el entorno sin autorización explícita.
+- [`ADR-005-repository-structure.md`](ADR-005-repository-structure.md) —
+  estructura del repositorio (paquete único, sin herramienta de monorepo).
+  Estado: `Accepted` — formaliza una decisión ya tomada de facto en Fase 1
+  y sostenida por evidencia en el propio repositorio.
+
+Las demás decisiones pendientes de `docs/architecture/BLUEPRINT_v1.1.md`
+§14 (ADR-002 object storage, ADR-003 base de datos, ADR-004 autenticación,
+ADR-006 CMS, ADR-007 mapas, ADR-008 infraestructura como código) siguen
+documentadas únicamente como tabla en ese Blueprint — no bloquean el
+alcance de Fase 2 (`docs/strategy/OPMX_ALIGNMENT_REVIEW_v1.0.md` §11) y se
+formalizarán como archivos individuales aquí cuando la fase que las
+necesita esté más próxima.
