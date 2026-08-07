@@ -37,10 +37,18 @@ arquitectura vigente):
 
 - [`STAGING.md`](docs/operations/STAGING.md) — barrera de acceso temporal
   de staging y su estado.
+- [`VERCEL_STAGING_DEPLOYMENT_PLAN.md`](docs/operations/VERCEL_STAGING_DEPLOYMENT_PLAN.md)
+  — plan documental (no ejecutado) para desplegar staging en Vercel, según
+  [`docs/adr/ADR-001-hosting.md`](docs/adr/ADR-001-hosting.md).
+
+**Decisiones de arquitectura:**
+
+- [`docs/adr/`](docs/adr/) — ADR individuales. `ADR-001-hosting.md`
+  (`Accepted`, Vercel) y `ADR-005-repository-structure.md` (`Accepted`,
+  paquete único) ya están formalizados; el resto sigue pendiente.
 
 **Reservados para uso futuro** (ver el `README.md` de cada uno para el
-porqué están vacíos hoy): [`docs/adr/`](docs/adr/),
-[`docs/policies/`](docs/policies/).
+porqué están vacíos hoy): [`docs/policies/`](docs/policies/).
 
 ## Requisitos
 

@@ -4,9 +4,14 @@ ADR (Architecture Decision Records) individuales de OPMX, uno por decisión,
 con contexto, opciones evaluadas, decisión y consecuencias.
 
 - [`ADR-001-hosting.md`](ADR-001-hosting.md) — proveedor de hosting.
-  Estado: `Pending Decision` — opciones evaluadas, decisión final pendiente
-  del usuario. No se decide unilateralmente ni se usan las credenciales de
-  AWS presentes en el entorno sin autorización explícita.
+  Estado: `Accepted` — Vercel Pro elegido para el portal, Preview
+  Deployments y staging durante Release 1.0 y Fase 2. No cubre OPMX
+  FIELD, bases de datos productivas ni otra infraestructura sensible
+  (esos componentes tendrán sus propios ADR). El despliegue en sí no
+  está ejecutado — ver
+  [`../operations/VERCEL_STAGING_DEPLOYMENT_PLAN.md`](../operations/VERCEL_STAGING_DEPLOYMENT_PLAN.md).
+  No se usan las credenciales de AWS presentes en el entorno sin
+  autorización explícita.
 - [`ADR-005-repository-structure.md`](ADR-005-repository-structure.md) —
   estructura del repositorio (paquete único, sin herramienta de monorepo).
   Estado: `Accepted` — formaliza una decisión ya tomada de facto en Fase 1
