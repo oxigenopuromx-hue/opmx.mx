@@ -9,16 +9,22 @@ para el alcance exacto y sus límites).
 
 ## Documentación del proyecto
 
-**Documentos rectores** (definen destino, camino y arquitectura vigente):
+**Documentos rectores** (definen destino, camino, requisitos y
+arquitectura vigente):
 
 - [`OPMX_VISION_2030.md`](docs/strategy/OPMX_VISION_2030.md) — visión
   institucional 2026–2030: qué debe llegar a ser OPMX y por qué.
 - [`OPMX_PRODUCT_ROADMAP_v1.0.md`](docs/strategy/OPMX_PRODUCT_ROADMAP_v1.0.md)
   — convierte la visión en releases, prioridades y criterios de avance.
+- [`OPMX_MASTER_SPEC_v1.0.md`](docs/specifications/OPMX_MASTER_SPEC_v1.0.md)
+  — especificación maestra oficial: requisitos técnicos y funcionales.
+- [`BLUEPRINT.md`](docs/architecture/BLUEPRINT.md) — propuesta
+  arquitectónica original (v1.0), conservada intacta como historial de
+  decisiones.
 - [`BLUEPRINT_v1.1.md`](docs/architecture/BLUEPRINT_v1.1.md) — arquitectura
   técnica vigente.
-- [`BLUEPRINT.md`](docs/architecture/BLUEPRINT.md) — propuesta original
-  (v1.0), conservada intacta como historial de decisiones.
+- [`ARCHITECTURE.md`](docs/architecture/ARCHITECTURE.md) — módulos del
+  monolito implementado y sus límites.
 
 **Fase 1** (ejecución y evidencia):
 
@@ -29,14 +35,12 @@ para el alcance exacto y sus límites).
 
 **Operación de este repositorio:**
 
-- [`ARCHITECTURE.md`](ARCHITECTURE.md) — módulos del monolito y sus
-  límites.
-- [`STAGING.md`](STAGING.md) — barrera de acceso temporal de staging y su
-  estado.
+- [`STAGING.md`](docs/operations/STAGING.md) — barrera de acceso temporal
+  de staging y su estado.
 
 **Reservados para uso futuro** (ver el `README.md` de cada uno para el
-porqué están vacíos hoy): [`docs/specifications/`](docs/specifications/),
-[`docs/adr/`](docs/adr/), [`docs/policies/`](docs/policies/).
+porqué están vacíos hoy): [`docs/adr/`](docs/adr/),
+[`docs/policies/`](docs/policies/).
 
 ## Requisitos
 
@@ -72,12 +76,14 @@ Ver `.env.example`. Ninguna es obligatoria para desarrollo local:
 - `NEXT_PUBLIC_SITE_URL` — dominio usado en `sitemap.xml`, `robots.txt` y
   URLs canónicas. Por defecto, el dominio de producción del Master Spec.
 - `STAGING_BASIC_AUTH_USER` / `STAGING_BASIC_AUTH_PASSWORD` — activan la
-  barrera temporal de staging (`STAGING.md`). Sin ambas, el sitio queda
+  barrera temporal de staging
+  ([`STAGING.md`](docs/operations/STAGING.md)). Sin ambas, el sitio queda
   abierto.
 
 ## Estructura
 
-Ver `ARCHITECTURE.md` para el detalle de módulos y límites. Resumen:
+Ver [`ARCHITECTURE.md`](docs/architecture/ARCHITECTURE.md) para el
+detalle de módulos y límites. Resumen:
 
 ```
 src/

@@ -1,16 +1,14 @@
-# Especificaciones — reservado
+# Especificaciones
 
-Este directorio está reservado para las especificaciones maestras de OPMX
-(p. ej. `OPMX_MASTER_SPEC_v1.0.md` y sus futuras versiones).
+Este directorio contiene las especificaciones maestras de OPMX.
 
-**Estado actual: vacío.** El `OPMX_MASTER_SPEC_v1.0.md` que dio origen a
-`docs/architecture/BLUEPRINT.md` fue proporcionado como documento de
-referencia en una conversación anterior, pero **nunca se guardó como
-archivo en este repositorio** — solo se procesó para producir el
-Blueprint. No se ha reconstruido su contenido aquí porque no formaba
-parte del alcance de esta reorganización (que es mover documentos ya
-versionados y agregar los dos nuevos documentos de estrategia
-explícitamente entregados) y reconstruirlo de memoria podría introducir
-diferencias respecto al original. Si el Master Spec debe incorporarse
-formalmente al repositorio, requiere que se vuelva a proporcionar el
-archivo fuente.
+- [`OPMX_MASTER_SPEC_v1.0.md`](OPMX_MASTER_SPEC_v1.0.md) — especificación
+  maestra oficial que dio origen a
+  [`docs/architecture/BLUEPRINT.md`](../architecture/BLUEPRINT.md). Se
+  había proporcionado como documento de referencia en una conversación
+  anterior y solo se había procesado para producir el Blueprint, sin
+  guardarse como archivo — se incorporó formalmente al repositorio,
+  verbatim, en una entrega posterior.
+
+Futuras versiones del Master Spec (`v1.1`, `v2.0`, etc.) se agregarán
+aquí conforme se aprueben.
