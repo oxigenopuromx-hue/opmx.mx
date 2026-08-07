@@ -7,15 +7,36 @@ básico. No incluye OPMX FIELD, video, datos personales ni un sistema
 estadístico productivo (ver `BLUEPRINT_v1.1.md` §3 y `PHASE_1_REPORT.md`
 para el alcance exacto y sus límites).
 
-## Documentos de referencia
+## Documentación del proyecto
 
-- `BLUEPRINT.md` — propuesta original (v1.0), conservada intacta como
-  historial de decisiones.
-- `BLUEPRINT_v1.1.md` — blueprint vigente, con las correcciones aprobadas.
-- `PHASE_1_EXECUTION_PLAN.md` — precisiones y alcance autorizado de Fase 1.
-- `PHASE_1_REPORT.md` — evidencia de cumplimiento de Fase 1.
-- `ARCHITECTURE.md` — módulos del monolito y sus límites.
-- `STAGING.md` — barrera de acceso temporal de staging y su estado.
+**Documentos rectores** (definen destino, camino y arquitectura vigente):
+
+- [`OPMX_VISION_2030.md`](docs/strategy/OPMX_VISION_2030.md) — visión
+  institucional 2026–2030: qué debe llegar a ser OPMX y por qué.
+- [`OPMX_PRODUCT_ROADMAP_v1.0.md`](docs/strategy/OPMX_PRODUCT_ROADMAP_v1.0.md)
+  — convierte la visión en releases, prioridades y criterios de avance.
+- [`BLUEPRINT_v1.1.md`](docs/architecture/BLUEPRINT_v1.1.md) — arquitectura
+  técnica vigente.
+- [`BLUEPRINT.md`](docs/architecture/BLUEPRINT.md) — propuesta original
+  (v1.0), conservada intacta como historial de decisiones.
+
+**Fase 1** (ejecución y evidencia):
+
+- [`PHASE_1_EXECUTION_PLAN.md`](docs/phases/phase-1/PHASE_1_EXECUTION_PLAN.md)
+  — precisiones y alcance autorizado de Fase 1.
+- [`PHASE_1_REPORT.md`](docs/phases/phase-1/PHASE_1_REPORT.md) — evidencia
+  de cumplimiento de Fase 1.
+
+**Operación de este repositorio:**
+
+- [`ARCHITECTURE.md`](ARCHITECTURE.md) — módulos del monolito y sus
+  límites.
+- [`STAGING.md`](STAGING.md) — barrera de acceso temporal de staging y su
+  estado.
+
+**Reservados para uso futuro** (ver el `README.md` de cada uno para el
+porqué están vacíos hoy): [`docs/specifications/`](docs/specifications/),
+[`docs/adr/`](docs/adr/), [`docs/policies/`](docs/policies/).
 
 ## Requisitos
 
